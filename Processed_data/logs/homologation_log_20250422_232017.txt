@@ -1,0 +1,540 @@
+===================================================================
+ENHANCED POLITICAL CANDIDATE DATA HOMOLOGATION PIPELINE 2.0
+Started at: 2025-04-22 23:20:17 
+Run ID: 20250422_232017 
+===================================================================
+
+
+===== STARTING ENHANCED POLITICAL CANDIDATE DATA HOMOLOGATION PIPELINE 2.0 =====
+Run started at: 2025-04-22 23:20:18 
+
+===== STARTING DATA HOMOLOGATION PROCESSING =====
+
+Setting up parallel processing with 15 workers
+Processing 40 files
+ Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────             100% Progress: ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────         100% Progress: ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 100%
+Processing: AGUASCALIENTES 
+  Reading file: AGUASCALIENTES.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: baseDatosCandidatos 
+  Reading file: baseDatosCandidatos.xls 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: BCS 
+  Reading file: BCS.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: candidates 
+  Reading file: candidates.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 561 rows and 6 columns
+Performing data type sanity checks...
+    EXACT match found for pattern: candidate_id -> candidate_id 
+    EXACT match found for pattern: candidate_name -> candidate_name 
+    CONTAINS match found for pattern: name -> party_name 
+    EXACT match found for pattern: party_name -> party_name 
+    EXACT match found for pattern: detail_url -> detail_url 
+  Unmatched columns: deputy_name, has_details 
+
+Processing: candidatos_merged_2018 
+  Reading file: candidatos_merged_2018.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 3481 rows and 42 columns
+Performing data type sanity checks...
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 2 unmatched columns to field mapping
+    EXACT match found for pattern: id_candidato -> id_candidato 
+    EXACT match found for pattern: nombre_candidato -> nombre_candidato 
+    CONTAINS match found for pattern: nombre -> nombre_corto 
+    EXACT match found for pattern: nombre_corto -> nombre_corto 
+    EXACT match found for pattern: fecha_nacimiento -> fecha_nacimiento 
+    EXACT match found for pattern: edad -> edad 
+    EXACT match found for pattern: sexo -> sexo 
+    EXACT match found for pattern: id_grado -> id_grado 
+    EXACT match found for pattern: estatus_val -> estatus_val 
+    EXACT match found for pattern: descripcion_hlc -> descripcion_hlc 
+    EXACT match found for pattern: descripcion_tp -> descripcion_tp 
+    EXACT match found for pattern: descripcion_candidato -> descripcion_candidato 
+    EXACT match found for pattern: propuesta1 -> propuesta1 
+    EXACT match found for pattern: propuesta2 -> propuesta2 
+    EXACT match found for pattern: propuesta3 -> propuesta3 
+    FUZZY match found for pattern: motivo_candidatura -> tipo_candidatura (similarity: 0.89 )
+    EXACT match found for pattern: tipo_asociacion -> tipo_asociacion 
+    EXACT match found for pattern: tipo_candidatura -> tipo_candidatura 
+    EXACT match found for pattern: entidad_federativa -> entidad_federativa 
+    EXACT match found for pattern: nombre_municipio -> nombre_municipio 
+    EXACT match found for pattern: id_distrito_eleccion -> id_distrito_eleccion 
+    EXACT match found for pattern: id_estado_eleccion -> id_estado_eleccion 
+    EXACT match found for pattern: correo_elec_publico -> correo_elec_publico 
+    EXACT match found for pattern: telefono_publico -> telefono_publico 
+    FUZZY match found for pattern: pagina_fb -> pagina_web (similarity: 0.9 )
+    EXACT match found for pattern: pagina_web -> pagina_web 
+  Unmatched columns: num_lista_senador, id_candidatura, id_num_formula, id_asociacion, id_tipo_candidatura, nombre_suplente, url_foto, lada, num_ext, calle, cp, colonia, num_int, source, source_type, genero, num_lista_diputado, id_circunscripcion_eleccion, nombre_distrito 
+
+Processing: CHIAPAS 
+  Reading file: CHIAPAS.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: CHICHUAHUA 
+  Reading file: CHICHUAHUA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: COAHUILA 
+  Reading file: COAHUILA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: COLIMA_3 
+  Reading file: COLIMA_3.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: COLIMA_DIP 
+  Reading file: COLIMA_DIP.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: COLIMA 
+  Reading file: COLIMA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: EDOMEX 
+  Reading file: EDOMEX.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 1584 rows and 25 columns
+Performing data type sanity checks...
+  Found mixed logical/character values in column propuesta_genero 
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 21 unmatched columns to field mapping
+    EXACT match found for pattern: num_lista_o_formula -> num_lista_o_formula 
+    EXACT match found for pattern: nombre_candidatura -> nombre_candidatura 
+    CONTAINS match found for pattern: nombre -> nombre_candidatura 
+    EXACT match found for pattern: edad -> edad 
+    EXACT match found for pattern: sexo -> sexo 
+    CONTAINS match found for pattern: estudios -> grado_maximo_estudios 
+    EXACT match found for pattern: estatus_grado_de_estudios -> estatus_grado_de_estudios 
+    EXACT match found for pattern: otra_formacion_academica -> otra_formacion_academica 
+    EXACT match found for pattern: historia_profesional_y_o_laboral -> historia_profesional_y_o_laboral 
+    EXACT match found for pattern: trayectoria_politica_y_o_participacion_organizaciones_ciudadanas_o_sociedad_civil -> trayectoria_politica_y_o_participacion_organizaciones_ciudadanas_o_sociedad_civil 
+    EXACT match found for pattern: propuesta_1 -> propuesta_1 
+    EXACT match found for pattern: propuesta_2 -> propuesta_2 
+    FUZZY match found for pattern: propuesta_3 -> propuesta_1 (similarity: 0.94 )
+    EXACT match found for pattern: propuesta_genero -> propuesta_genero 
+    EXACT match found for pattern: motivo_cargo_publico -> motivo_cargo_publico 
+    EXACT match found for pattern: partido_coalicion_candidatura -> partido_coalicion_candidatura 
+    EXACT match found for pattern: cargo -> cargo 
+    EXACT match found for pattern: entidad -> entidad 
+    EXACT match found for pattern: municipio -> municipio 
+    EXACT match found for pattern: distrito_local -> distrito_local 
+    CONTAINS match found for pattern: tipo -> tipo_candidatura 
+    EXACT match found for pattern: correo_electronico_publico -> correo_electronico_publico 
+    EXACT match found for pattern: telefono_publico_contacto -> telefono_publico_contacto 
+    FUZZY match found for pattern: pagina_fb -> pagina_web (similarity: 0.9 )
+    EXACT match found for pattern: pagina_web -> pagina_web 
+  Unmatched columns: circunscripcion, direccion_casa_campana, redes_sociales_o_medios_de_contacto 
+
+Processing: EDOMEX2 
+  Reading file: EDOMEX2.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: ELECCIONES_2016 
+  Reading file: ELECCIONES_2016.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 367 rows and 20 columns
+Performing data type sanity checks...
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 24 unmatched columns to field mapping
+    EXACT match found for pattern: candidate_id -> candidate_id 
+    EXACT match found for pattern: candidate_name -> candidate_name 
+    CONTAINS match found for pattern: name -> party_name 
+    EXACT match found for pattern: professional_background -> professional_background 
+    EXACT match found for pattern: political_background -> political_background 
+    CONTAINS match found for pattern: background -> professional_background 
+    EXACT match found for pattern: candidacy_reason -> candidacy_reason 
+    EXACT match found for pattern: party_name -> party_name 
+    EXACT match found for pattern: email -> email 
+    EXACT match found for pattern: phone -> phone 
+    EXACT match found for pattern: facebook -> facebook 
+    EXACT match found for pattern: twitter -> twitter 
+    EXACT match found for pattern: detail_url -> detail_url 
+  Unmatched columns: deputy_name, has_details, address, youtube, x16, x17, x18, x19, x20 
+
+Processing: ELECCIONES_2018 
+  Reading file: ELECCIONES_2018.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 3481 rows and 42 columns
+Performing data type sanity checks...
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 33 unmatched columns to field mapping
+    EXACT match found for pattern: id_candidato -> id_candidato 
+    EXACT match found for pattern: nombre_candidato -> nombre_candidato 
+    CONTAINS match found for pattern: nombre -> nombre_corto 
+    EXACT match found for pattern: nombre_corto -> nombre_corto 
+    EXACT match found for pattern: fecha_nacimiento -> fecha_nacimiento 
+    EXACT match found for pattern: edad -> edad 
+    EXACT match found for pattern: sexo -> sexo 
+    EXACT match found for pattern: id_grado -> id_grado 
+    EXACT match found for pattern: estatus_val -> estatus_val 
+    EXACT match found for pattern: descripcion_hlc -> descripcion_hlc 
+    EXACT match found for pattern: descripcion_tp -> descripcion_tp 
+    EXACT match found for pattern: descripcion_candidato -> descripcion_candidato 
+    EXACT match found for pattern: propuesta1 -> propuesta1 
+    EXACT match found for pattern: propuesta2 -> propuesta2 
+    EXACT match found for pattern: propuesta3 -> propuesta3 
+    FUZZY match found for pattern: motivo_candidatura -> tipo_candidatura (similarity: 0.89 )
+    EXACT match found for pattern: tipo_asociacion -> tipo_asociacion 
+    EXACT match found for pattern: tipo_candidatura -> tipo_candidatura 
+    EXACT match found for pattern: entidad_federativa -> entidad_federativa 
+    EXACT match found for pattern: nombre_municipio -> nombre_municipio 
+    EXACT match found for pattern: id_distrito_eleccion -> id_distrito_eleccion 
+    EXACT match found for pattern: id_estado_eleccion -> id_estado_eleccion 
+    EXACT match found for pattern: correo_elec_publico -> correo_elec_publico 
+    EXACT match found for pattern: telefono_publico -> telefono_publico 
+    FUZZY match found for pattern: pagina_fb -> pagina_web (similarity: 0.9 )
+    EXACT match found for pattern: pagina_web -> pagina_web 
+  Unmatched columns: num_lista_senador, id_candidatura, id_num_formula, id_asociacion, id_tipo_candidatura, nombre_suplente, url_foto, lada, num_ext, calle, cp, colonia, num_int, source, source_type, genero, num_lista_diputado, id_circunscripcion_eleccion, nombre_distrito 
+
+Processing: ELECCIONES_2021 
+  Reading file: ELECCIONES_2021.xls 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+New names:
+• `` -> `...16`
+• `` -> `...17`
+• `` -> `...18`
+• `` -> `...19`
+• `` -> `...20`
+Processing: ELECCIONES_2022 
+  Reading file: ELECCIONES_2022.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: GUANAJUATO 
+  Reading file: GUANAJUATO.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: HIDALGO 
+  Reading file: HIDALGO.xls 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: JALISCO 
+  Reading file: JALISCO.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: legislators_data_latest 
+  Reading file: legislators_data_latest.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 6461 rows and 74 columns
+Performing data type sanity checks...
+  Found mixed logical/character values in column gender 
+  Found mixed logical/character values in column facebook 
+  Found mixed logical/character values in column twitter 
+  Found mixed logical/character values in column instagram 
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 142 unmatched columns to field mapping
+    EXACT match found for pattern: id -> id 
+    EXACT match found for pattern: full_name -> full_name 
+    EXACT match found for pattern: name -> name 
+    EXACT match found for pattern: fecha_nacimiento -> fecha_nacimiento 
+    EXACT match found for pattern: age -> age 
+    EXACT match found for pattern: gender -> gender 
+    EXACT match found for pattern: preparacion_academica -> preparacion_academica 
+    EXACT match found for pattern: curriculum_administrativa -> curriculum_administrativa 
+    EXACT match found for pattern: curriculum_investigacion_y_docencia -> curriculum_investigacion_y_docencia 
+    EXACT match found for pattern: experiencia_legislativa -> experiencia_legislativa 
+    CONTAINS match found for pattern: profile -> profile_url 
+    EXACT match found for pattern: partido -> partido 
+    EXACT match found for pattern: chamber -> chamber 
+    EXACT match found for pattern: entidad -> entidad 
+    EXACT match found for pattern: distrito_nombre -> distrito_nombre 
+    CONTAINS match found for pattern: eleccion -> principio_eleccion 
+    EXACT match found for pattern: correo_electronico -> correo_electronico 
+    EXACT match found for pattern: telefono -> telefono 
+    EXACT match found for pattern: facebook -> facebook 
+    EXACT match found for pattern: twitter -> twitter 
+    EXACT match found for pattern: instagram -> instagram 
+    EXACT match found for pattern: profile_url -> profile_url 
+  Unmatched columns: html_saved_path, scrape_date, chamber_type, title, name_without_title, clean_name_for_photo, party, party_logo_url, photo_url, numero_legislatura, periodo_legislatura, ciudad, region_de_eleccion, fecha_toma_protesta, ubicacion_oficina, suplente_de, ultimo_grado_estudios, redes_sociales, observations, electoral_entity, distrito_numero, legislature_start_date, legislature_end_date, legislature_roman, legislature_number, legislature_id, local_photo_path, json_saved_path, curriculum_legislativa, curriculum, curriculum_file, suplente_id, suplente_name, eleccinconsecutiva, facebook_url, facebook_username, twitter_url, twitter_username, instagram_url, instagram_username, curriculum_politica, curriculum_escolaridad_y_preparacion_academica, curriculum_empresarial_iniciativa_privada, curriculum_otros_rubros, birth_date_iso, curriculum_academica, chamber_id, commissions, commissions_count, commissions_str, commission_presidency_count, commission_secretary_count, commission_member_count 
+
+Processing: MORELOS 
+  Reading file: MORELOS.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: NUEVOLEON 
+  Reading file: NUEVOLEON.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: OAXACA 
+  Reading file: OAXACA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: PUEBLA 
+  Reading file: PUEBLA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: QUERETARO 
+  Reading file: QUERETARO.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: SIL_Mayors 
+  Reading file: SIL_Mayors.dta 
+    Stata file
+    Successfully read dataframe with 5687 rows and 86 columns
+Performing data type sanity checks...
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 52 unmatched columns to field mapping
+    EXACT match found for pattern: id -> id 
+    CONTAINS match found for pattern: nombre -> nombre2 
+    FUZZY match found for pattern: birthdate -> birth (similarity: 0.85 )
+    EXACT match found for pattern: partido -> partido 
+    EXACT match found for pattern: statebth -> statebth 
+  Unmatched columns: periododelabrnbsp, principio, toma, legislatura, pospub1, inip2, finp2, pospub2, inip3, finp3, pospub3, inip4, finp4, pospub4, inip5, finp5, pospub5, inip6, finp6, pospub6, inip7, finp7, pospub7, inip8, finp8, pospub8, inip9, finp9, pospub9, inip10, finp10, pospub10, inip11, finp11, pospub11, inip12, finp12, pospub12, inip13, finp13, pospub13, inip14, finp14, pospub14, inip15, finp15, pospub15, inip16, finp16, pospub16, inip17, finp17, pospub17, inip18, finp18, pospub18, inip19, finp19, pospub19, inip20, finp20, pospub20, inip21, finp21, pospub21, inip22, finp22, pospub22, inip23, finp23, pospub23, inip, finp, pospub, inip24, finp24, pospub24, inip25, finp25, pospub25, prev_may 
+
+Processing: SINALOA 
+  Reading file: SINALOA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: SLP 
+  Reading file: SLP.csv 
+    CSV file with detected encoding: UTF-8 
+    Using comma delimiter
+    Successfully read dataframe with 564 rows and 29 columns
+Performing data type sanity checks...
+  Found mixed logical/character values in column tw 
+  Found mixed logical/character values in column yt 
+  Found mixed logical/character values in column ins 
+  Found mixed logical/character values in column otra_red_social 
+  Found mixed logical/character values in column pagina_web 
+  Found mixed logical/character values in column otra_formacion_academica 
+Reading unmatched columns report: reports/unmatched_columns_20250422_232017.csv 
+Added 52 unmatched columns to field mapping
+    CONTAINS match found for pattern: id -> primer_apellido 
+    EXACT match found for pattern: nombre -> nombre 
+    EXACT match found for pattern: primer_apellido -> primer_apellido 
+    EXACT match found for pattern: segundo_apellido -> segundo_apellido 
+    CONTAINS match found for pattern: edad -> trayectoria_politica_y_o_participacion_social_en_organizaciones_ciudadanas_o_de_la_sociedad_civil 
+    CONTAINS match found for pattern: genero -> propuestas_en_materia_de_genero_o_en_su_caso_del_grupo_en_situacion_de_discriminacion_que_representa 
+    CONTAINS match found for pattern: estudios -> grado_maximo_de_estudios_y_su_estatus 
+    CONTAINS match found for pattern: estatus -> grado_maximo_de_estudios_y_su_estatus 
+    EXACT match found for pattern: otra_formacion_academica -> otra_formacion_academica 
+    EXACT match found for pattern: historia_profesional_y_o_laboral -> historia_profesional_y_o_laboral 
+    EXACT match found for pattern: trayectoria_politica_y_o_participacion_social_en_organizaciones_ciudadanas_o_de_la_sociedad_civil -> trayectoria_politica_y_o_participacion_social_en_organizaciones_ciudadanas_o_de_la_sociedad_civil 
+    EXACT match found for pattern: cual_es_la_primera_de_sus_dos_principales_propuestas -> cual_es_la_primera_de_sus_dos_principales_propuestas 
+    EXACT match found for pattern: cual_es_la_segunda_de_sus_dos_principales_propuestas -> cual_es_la_segunda_de_sus_dos_principales_propuestas 
+    CONTAINS match found for pattern: propuestas_en_materia_de_genero -> propuestas_en_materia_de_genero_o_en_su_caso_del_grupo_en_situacion_de_discriminacion_que_representa 
+    EXACT match found for pattern: por_que_quiere_ocupar_un_cargo_publico -> por_que_quiere_ocupar_un_cargo_publico 
+    EXACT match found for pattern: partido -> partido 
+    EXACT match found for pattern: puesto -> puesto 
+    FUZZY match found for pattern: delegacion -> eleccion (similarity: 0.86 )
+    EXACT match found for pattern: eleccion -> eleccion 
+    EXACT match found for pattern: correo_s_electronico_s_publico_s -> correo_s_electronico_s_publico_s 
+    EXACT match found for pattern: telefono_s_publico_s_de_contacto -> telefono_s_publico_s_de_contacto 
+    EXACT match found for pattern: fb -> fb 
+    EXACT match found for pattern: tw -> tw 
+    EXACT match found for pattern: ins -> ins 
+    EXACT match found for pattern: pagina_web -> pagina_web 
+  Unmatched columns: mr_rp, tipo, siglas, tipo_candidatura, nombre_coalicion, yt, tt, otra_red_social, domicilio_s_de_casa_de_campana 
+
+Processing: SOLICITUD_1 
+  Reading file: SOLICITUD_1.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: SOLICITUD_2 
+  Reading file: SOLICITUD_2.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: SOLICITUD_3 
+  Reading file: SOLICITUD_3.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: SOLICITUD_4 
+  Reading file: SOLICITUD_4.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: SONORA 
+  Reading file: SONORA.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: TABASCO 
+  Reading file: TABASCO.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: TAMAULIPAS 
+  Reading file: TAMAULIPAS.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: TLAXCALA_2 
+  Reading file: TLAXCALA_2.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: Tlaxcala 
+  Reading file: Tlaxcala.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: YUCATAN 
+  Reading file: YUCATAN.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Processing: ZACATECAS 
+  Reading file: ZACATECAS.xlsx 
+    ERROR reading file: `clean_names()` requires that either names or dimnames be non-null. 
+  Failed to read file or empty dataframe
+
+Combining 8 processed dataframes
+Performing data type sanity checks...
+  Found mixed logical/character values in column pagina_web 
+  Found mixed logical/character values in column sexo_genero 
+  Found mixed logical/character values in column facebook 
+  Found mixed logical/character values in column cursos 
+  Found mixed logical/character values in column propuesta_genero 
+  Found mixed logical/character values in column twitter 
+  Found mixed logical/character values in column instagram 
+Initial combined dataframe has 22186 rows
+
+Performing specialized field cleaning...
+Preparing for deduplication...
+Found 0 duplicate records based on composite identifier
+
+Standardizing education levels...
+Education column type: character 
+Processing education record 10000 
+Processing education record 20000 
+Education standardization complete.
+
+Extracting experience indicators by year...
+Experience analysis using fields: historia_profesional, trayectoria_politica, experiencia_docencia, descripcion_candidato 
+Analyzing experience for 22186 candidates...
+Extracting public sector experience by year...
+  Completed analysis for year: 2000 
+  Completed analysis for year: 2005 
+  Completed analysis for year: 2010 
+  Completed analysis for year: 2015 
+  Completed analysis for year: 2020 
+Extracting private sector experience by year...
+  Completed analysis for year: 2000 
+  Completed analysis for year: 2005 
+  Completed analysis for year: 2010 
+  Completed analysis for year: 2015 
+  Completed analysis for year: 2020 
+
+Classifying political ideology...
+Classifying candidate ideology based on text...
+Ideology analysis using fields: propuesta_1, propuesta_2, propuesta_3, propuesta_genero, motivo_cargo_publico, trayectoria_politica 
+
+Calculating political economy metrics...
+ERROR in political economy metrics: In argument: `polarization_index = sqrt(economic_axis^2 + social_axis^2)`. 
+Continuing with processing...
+
+Final homologated dataframe has 22186 unique records and 117 fields
+
+Saving integrated dataset to output_data/homologated_candidates_full_20250422_232017.csv 
+wrote 714.09kB in  0s, 6.21GB/s                                                                                                                                                                     wrote 1.00TB in  0s, 25.68TB/s                                                                                                                                                                     
+===== GENERATING SUMMARY STATISTICS =====
+
+Education distribution:
+# A tibble: 10 × 3
+   nivel_educativo_estandarizado count percentage
+   <chr>                         <int>      <dbl>
+ 1 NO_ESPECIFICADO               18626    84.0   
+ 2 LICENCIATURA                   2896    13.1   
+ 3 ESCOLARIDAD_NO_ESPECIFICADA     335     1.51  
+ 4 MAESTRIA                         88     0.397 
+ 5 BACHILLERATO                     81     0.365 
+ 6 SECUNDARIA                       48     0.216 
+ 7 DOCTORADO                        44     0.198 
+ 8 PRIMARIA                         38     0.171 
+ 9 TECNICO                          26     0.117 
+10 SIN_ESTUDIOS                      4     0.0180
+
+Candidates with significant education:
+# A tibble: 3 × 3
+  educacion_significativa count percentage
+                    <int> <int>      <dbl>
+1                       0    90       2.79
+2                       1   107       3.32
+3                       2  3028      93.9 
+
+Education significance levels:
+  0 = Basic education (primary or secondary)
+  1 = Mid-level education (high school or technical)
+  2 = Professional education (college or higher)
+
+Experience summary:
+  avg_public_years avg_private_years candidates_with_public candidates_with_private candidates_with_both avg_consecutive_public avg_consecutive_private
+1         2.066348          2.006626                   4833                    4843                 4776               1.694898                1.600874
+
+Dominant experience sector:
+# A tibble: 4 × 3
+  experience_sector_dominant count percentage
+  <chr>                      <int>      <dbl>
+1 Sin Experiencia Detectada  17286      77.9 
+2 Mixto                       2810      12.7 
+3 Público                     1376       6.20
+4 Privado                      714       3.22
+
+Ideology classification summary:
+# A tibble: 44 × 3
+   ideology_classification                      count percentage
+   <chr>                                        <int>      <dbl>
+ 1 NO_CLASIFICADO                               10973     49.5  
+ 2 CENTRO_CONSERVADOR                            5968     26.9  
+ 3 CENTRO                                        2232     10.1  
+ 4 IZQUIERDA_TRADICIONAL                         1731      7.80 
+ 5 POPULISTA_NACIONALISTA_IZQUIERDA_TRADICIONAL   371      1.67 
+ 6 POPULISTA_IZQUIERDA_TRADICIONAL                165      0.744
+ 7 IZQUIERDA_MODERADA                             150      0.676
+ 8 NACIONALISTA_IZQUIERDA_TRADICIONAL             137      0.618
+ 9 DERECHA_CONSERVADORA                            90      0.406
+10 POPULISTA_IZQUIERDA_MODERADA                    50      0.225
+# ℹ 34 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+===== GENERATING SPECIALIZED RESEARCH DATASETS =====
+Creating education analysis dataset...
+wrote 18.09kB in  0s, 6.32GB/swrote 1.00TB in  0s, 63.70TB/s                                                                                                                                                                     Creating experience trajectory dataset...
+wrote 47.78kB in  0s, 22.27GB/s                                                                                                                                                                     wrote 1.00TB in  0s, 68.85TB/s                                                                                                                                                                     Creating ideology analysis dataset...
+wrote 21.50kB in  0s, 11.27GB/s                                                                                                                                                                     wrote 1.00TB in  0s, 84.45TB/s                                                                                                                                                                     Creating integrated political economy dataset...
+wrote 16.27kB in  0s, 17.06GB/s                                                                                                                                                                     wrote 1.00TB in  0s, 71.22TB/s                                                                                                                                                                     Successfully created specialized research datasets
+
+Creating clean version of the dataset with key fields...
+Saving clean dataset to output_data/homologated_candidates_clean_20250422_232017.csv 
+wrote 95.90kB in  0s, 50.28GB/s                                                                                                                                                                     wrote 1.00TB in  0s, 61.49TB/s                                                                                                                                                                     
+===== PIPELINE EXECUTION COMPLETED =====
+Run finished at: 2025-04-22 23:26:09 
+Total runtime: 5.86 minutes
+Processed 22186 unique candidate records
+Standardized 117 fields
+Data sourced from 8 different files
